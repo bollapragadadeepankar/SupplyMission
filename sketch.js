@@ -77,7 +77,7 @@ function draw() {
  
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
-  packageBody.position.x = helicopterSprite.x
+ 
   
   drawSprites();
   keyPressed();
@@ -92,8 +92,10 @@ function keyPressed() {
 	}
 	if (keyCode === RIGHT_ARROW) {
 	   helicopterSprite.x = helicopterSprite.x+5
+	   helicopterSprite.x =  packageBody.position.x
 	}
 	if (keyCode === LEFT_ARROW) {
 	   helicopterSprite.x = helicopterSprite.x-5
+	   helicopterSprite.x =  packageBody.position.x
 	}
 }
